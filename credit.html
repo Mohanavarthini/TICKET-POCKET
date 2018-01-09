@@ -1,0 +1,23 @@
+<html>
+<head>
+<title>TICKET RESERVATION</title>
+
+</head>
+<body style="background:url('images-9.jpeg');background-size:100%;background-repeat:no-repeat;background-position:50%;">
+<div style="width:100%;height:100%;position:absolute;left:0;top:0;background:rgba(255,255,255,0.50);">
+<caption><center><font face="jokerman" color="red" size="8">TICKET POCKET</font></center></caption><br><br>
+<form align="center">
+<center>USER NAME: <input type="text" name="UN" size="40"></center><br><br>
+<center>CREDITCARD NO: <input type="text" name="ccno" size="40"></center><br><br>
+<center>PASSWORD:<input type="password" name="pwd"></center><br><br>
+<center>TOTAL AMOUNT: <input id="amount" type="text" name="amount"></center><br><br><br>
+<center><a href="thanks.html">DONE</a></center><br><br>
+<center><a href="button.html">CANCEL</a></center>
+</form>
+<script>
+test = window.location.href;
+test=test.substring(test.lastIndexOf('=')+1);
+document.getElementById('amount').value=test;
+</script>
+</body>
+</html>
